@@ -21,6 +21,7 @@ Questa app vuole fornire il servizio di una libreria digitale da portare sempre 
 ![risultati autore](preview/risultatiAutore12.png)
 ![nessun autore trovato](preview/errorAutori13.png)
 ![tutti gli autori](preview/autori14.png)
+![tutti il mio profilo](preview/profilo14.png)
 ![pagina di successo](preview/success15.png)
 
 ## Funzionalità
