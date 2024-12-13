@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbarScroll{
+	gap:40px;
+}
+.box-home{
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;  
+    gap: 40px
+
+}
+.box-testi{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin-top: 200px;
+	padding: 80px;
+	animation: fadeIn 1.5s ease-out;
+	animation: slideUp 1.5s ease-out;
+}
+
+
+h2 {
+    overflow: hidden; /* Nasconde il testo che non è ancora stato scritto */
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    border-right: 2px solid #000; /* Una linea che appare mentre il testo viene scritto */
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards; 
+}
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+.box-testi>p {
+	line-height:1.8;
+	font-size: 16px;
+}
+
+.box-img {
+	width: 50%;
+	height: 70%;
+	animation: fadeIn 1.5s ease-out;
+	animation: slideRight 1.5s ease-out;
+}
+.box-img>img{
+	width: 100%;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.box-buttons {
+	display:flex;
+	gap: 60px;
+}
+
+@media(max-width: 600px) {
+	.box-home {
+		flex-direction: column;
+		margin-top:100px;
+	}
+	.box-testi {
+		width: 100%;
+		padding:50px;
+	}
+	h2{
+		font-size: 53px;
+	}
+	.box-testi>p{
+		text-align: center;
+	}
+	.box-buttons {
+		margin-top: 20px;
+	}
+	
+	.box-img{
+		margin-top:0;
+		width:100%;
+	}
+	.forMedia {
+		margin-bottom: 20px;
+	}
+}

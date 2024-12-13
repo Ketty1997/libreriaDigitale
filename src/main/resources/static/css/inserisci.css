@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+background: #f2f2f2;
+font-family: "Roboto", sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;  
+    
+}
+.insert-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+}
+.titoli{
+	display: flex;
+    align-items: flex-start;
+    }
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 40px;
+}
+.form .bottone {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(52, 121, 40);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+ height:50px;
+ border-radius: 15px
+}
+.form .bottone:hover,.form .bottone:active,.form .bottone:focus {
+  background: rgb(71, 102, 59);
+}
+.form .bottoneAggiorna {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(19, 62, 135);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+ height:50px;
+ border-radius: 15px
+}
+.form .bottoneAggiorna:hover,.form .bottoneAggiorna:active,.form .bottoneAggiorna:focus {
+  background: rgb(47, 88, 205);
+}
+
+form>a{
+	text-decoration: none;
+	width:100%;
+	display: block;
+}
+.onlyColor{
+	background: #4B7F46;
+}
+

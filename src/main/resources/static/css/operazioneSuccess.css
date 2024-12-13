@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body{
+	text-align: center;
+    padding: 40px 0;
+    background: #EBF0F5;
+    }
+      
+      
+h1 {
+	color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+    }
+        
+p {
+	color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+    }
+     
+h1, p {
+  animation: fade-in 0.5s ease-out 0.5s forwards;
+  opacity: 0;
+   }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+i {
+	color: #9ABC66;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+  }
+.card {
+       background: white;
+       padding: 60px;
+       border-radius: 4px;
+       box-shadow: 0 2px 3px #C8D0D8;
+       display: inline-block;
+       margin: 0 auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width:45%;
+    }
+ 
+ .card div {
+  animation: pop-in 0.5s ease-out;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.bottone {
+       font-family: "Roboto", sans-serif;
+	   text-transform: uppercase;
+	   outline: 0;
+	   background: rgb(52, 121, 40);
+	   width: 20%;
+	   border: 0;
+	   padding: 20px;
+	   color: #FFFFFF;
+	   font-size: 14px;
+	   transition: all 0.3 ease;
+	   cursor: pointer;
+	   border-radius: 15px;
+	   text-decoration:none;
+	   margin-top:30px;
+	   display:block;
+	   animation: pulse 1.5s infinite;
+      }
+      
+    @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bottone:hover,.form .bottone:active,.form .bottone:focus {
+  background: rgb(71, 102, 59);
+}
